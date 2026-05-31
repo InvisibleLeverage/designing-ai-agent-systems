@@ -1,38 +1,15 @@
 # Designing AI Agent Systems
 
-Companion repository for:
+> Companion repository for the book **Designing AI Agent Systems: A Practical Guide to Multi-Agent Architectures, Autonomous Workflows, and Intelligent AI Applications** by Akshay Panda.
 
-**Designing AI Agent Systems: A Practical Guide to Multi-Agent Architectures, Autonomous Workflows, and Intelligent AI Applications**
-
-*Author: Akshay Panda*
-
----
-
-## What's in this repository
-
-Every implementation contract from the book — translated into runnable Python.
-
-| Folder | Content |
-|---|---|
-| `ch03-agent-architectures/` | Goal parser, agent loop, tool library, parallel fan-out |
-| `ch04-prompting-reasoning/` | Structured output, role prompts, three-pass reflection |
-| `ch05-memory-systems/` | Context manager, session memory, vector memory |
-| `ch06-tool-systems/` | Tool registry, tool dispatcher, schema validation |
-| `ch07-orchestration/` | Sequential pipeline, parallel orchestrator, hierarchical orchestrator |
-| `ch08-deployment/` | Logging contract, task queue, graceful degradation |
-| `ch09-reliability/` | Circuit breaker, output validator, loop detector, handoff validation |
-| `ch10-observability/` | Quality monitor, retrieval drift detection, cost telemetry |
-| `ch11-economics/` | Cost-guarded task runner |
-| `prompts/` | Production system prompt templates |
-| `templates/` | Architecture and deployment templates |
-| `resources/` | Framework comparisons, tool recommendations |
+This repository contains the code examples, prompt templates, architecture diagrams, deployment templates, and companion resources referenced throughout the book. Each folder maps directly to a chapter so you can follow along as you read.
 
 ---
 
 ## Quick start
 
 ```bash
-git clone https://github.com/akshaypanda/designing-ai-agent-systems
+git clone https://github.com/InvisibleLeverage/designing-ai-agent-systems
 cd designing-ai-agent-systems
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY=your_key_here
@@ -41,13 +18,31 @@ python ch03-agent-architectures/agent_loop.py
 
 ---
 
+## What's in this repository
+
+| Folder | Content |
+|---|---|
+| `ch03-agent-architectures/` | Goal parser, agent loop, tool library, parallel fan-out |
+| `ch04-prompting-reasoning/` | Structured output, role prompts, three-pass reflection |
+| `ch05-memory-systems/` | Context manager, session memory, vector memory |
+| `ch06-tool-systems/` | Tool registry, tool dispatcher, schema validation |
+| `ch07-orchestration/` | Sequential pipeline, parallel orchestrator, hierarchical orchestrator |
+| `ch09-reliability/` | Circuit breaker, output validator, loop detector, handoff validation |
+| `ch11-economics/` | Cost-guarded task runner |
+| `prompts/` | Production system prompt templates for research, orchestration, and content agents |
+| `templates/` | Architecture and deployment templates — goal parser, memory schema, runbooks |
+| `resources/` | Framework comparisons, vector database comparison, recommended tools |
+| `diagrams/` | Architecture diagrams referenced in the book |
+
+---
+
 ## Repository structure
 
 ```
 designing-ai-agent-systems/
 ├── ch03-agent-architectures/
-│   ├── goal_parser.py
 │   ├── agent_loop.py
+│   ├── goal_parser.py
 │   ├── tool_library.py
 │   └── parallel_fanout.py
 ├── ch04-prompting-reasoning/
@@ -65,23 +60,50 @@ designing-ai-agent-systems/
 │   ├── sequential_pipeline.py
 │   ├── parallel_orchestrator.py
 │   └── hierarchical_orchestrator.py
-├── ch08-deployment/
-│   ├── logging_contract.py
-│   └── task_queue.py
 ├── ch09-reliability/
 │   ├── circuit_breaker.py
 │   ├── output_validator.py
 │   ├── loop_detector.py
 │   ├── validated_memory_store.py
 │   └── agent_handoff_validation.py
-├── ch10-observability/
-│   └── quality_monitor.py
 ├── ch11-economics/
 │   └── cost_guard.py
 ├── prompts/
+│   ├── orchestrator.txt
+│   ├── research-agent.txt
+│   ├── content-agent.txt
+│   ├── fact-checker.txt
+│   ├── reflection.txt
+│   └── reviewer.txt
 ├── templates/
-└── resources/
+│   ├── goal-parser-template.md
+│   ├── memory-schema-template.md
+│   ├── research-agent-template.md
+│   ├── tool-registry-template.md
+│   ├── deployment-runbook.md
+│   └── production-checklist.md
+├── resources/
+│   ├── framework-comparison.md
+│   ├── vector-database-comparison.md
+│   └── recommended-tools.md
+├── diagrams/
+├── requirements.txt
+├── LICENSE
+└── CONTRIBUTING.md
 ```
+
+---
+
+## How to use this repository with the book
+
+Each chapter folder contains the runnable implementation contracts described in that chapter. The pattern is the same throughout:
+
+1. Read the chapter to understand the architecture and design decisions
+2. Open the corresponding folder in this repository
+3. Run the implementation to see it working
+4. Adapt it to your own use case
+
+The `prompts/` and `templates/` folders are standalone — use them directly in your own projects without reading the book first.
 
 ---
 
