@@ -23,4 +23,8 @@ Implementation contracts for the four-layer agent architecture.
 python agent_loop.py
 ```
 
-Requires `ANTHROPIC_API_KEY` in environment.
+The code examples in this chapter call an LLM. Set your API key before running:
+
+```bash
+export ANTHROPIC_API_KEY=your_key_here
+```

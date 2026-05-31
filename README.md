@@ -12,6 +12,13 @@ This repository contains the code examples, prompt templates, architecture diagr
 git clone https://github.com/InvisibleLeverage/designing-ai-agent-systems
 cd designing-ai-agent-systems
 pip install -r requirements.txt
+```
+
+Most resources in this repository — diagrams, prompts, templates, and reference materials — can be used without an API key.
+
+To run the code examples that call an LLM:
+
+```bash
 export ANTHROPIC_API_KEY=your_key_here
 python ch03-agent-architectures/agent_loop.py
 ```
