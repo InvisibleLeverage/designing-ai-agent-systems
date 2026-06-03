@@ -23,14 +23,14 @@ Production infrastructure for AI agent systems: async task queues, cost controls
 ## Quick start
 
 ```bash
-pip install fastapi uvicorn anthropic
+pip install -r requirements.txt
 uvicorn fastapi_agent_service:app --reload
 ```
 
 Set your API key first:
 
 ```bash
-export ANTHROPIC_API_KEY=your_key_here
+export AI_API_KEY=your_key_here
 ```
 
 Submit a task:

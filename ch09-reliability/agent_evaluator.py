@@ -12,7 +12,7 @@ from typing import Optional
 
 import anthropic
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 
 
 # Rubric library — each task type has evaluation criteria scored 0.0–1.0

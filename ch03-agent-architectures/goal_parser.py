@@ -12,7 +12,7 @@ from dataclasses import dataclass, field
 
 import anthropic
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 MODEL = "claude-sonnet-4-6"
 
 

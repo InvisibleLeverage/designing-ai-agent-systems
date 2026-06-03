@@ -12,7 +12,7 @@ This repository contains the production-quality code examples referenced through
 git clone https://github.com/InvisibleLeverage/designing-ai-agent-systems
 cd designing-ai-agent-systems
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=your_key_here
+export AI_API_KEY=your_key_here
 python ch03-agent-architectures/agent_loop.py
 ```
 

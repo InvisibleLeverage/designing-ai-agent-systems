@@ -27,5 +27,5 @@ python agent_loop.py
 The code examples in this chapter call an LLM. Set your API key before running:
 
 ```bash
-export ANTHROPIC_API_KEY=your_key_here
+export AI_API_KEY=your_key_here
 ```

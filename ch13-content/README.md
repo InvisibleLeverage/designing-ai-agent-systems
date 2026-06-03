@@ -19,7 +19,7 @@ One source piece → multiple platform-native derivatives. Brand voice as a cali
 ## Quick start
 
 ```bash
-pip install anthropic
+pip install -r requirements.txt
 python content_multiplier.py     # generates all formats from a sample article
 python content_publisher.py      # shows a sample publishing calendar
 ```
@@ -27,7 +27,7 @@ python content_publisher.py      # shows a sample publishing calendar
 Set your API key first:
 
 ```bash
-export ANTHROPIC_API_KEY=your_key_here
+export AI_API_KEY=your_key_here
 ```
 
 ## Format selection guide

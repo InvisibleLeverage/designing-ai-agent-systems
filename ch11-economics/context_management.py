@@ -12,7 +12,7 @@ from typing import Optional
 
 import anthropic
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 HAIKU = "claude-haiku-4-5-20251001"
 
 CHARS_PER_TOKEN     = 4     # rough approximation for budget estimation

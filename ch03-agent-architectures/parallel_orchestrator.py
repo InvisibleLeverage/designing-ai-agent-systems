@@ -16,7 +16,7 @@ import anthropic
 
 from agent_loop import run_agent
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 MODEL  = "claude-sonnet-4-6"
 
 

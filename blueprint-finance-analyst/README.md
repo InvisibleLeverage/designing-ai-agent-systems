@@ -38,7 +38,7 @@ In most jurisdictions, AI-generated financial analysis must be clearly labelled 
 ## Quick start
 
 ```bash
-pip install anthropic
-export ANTHROPIC_API_KEY=your_key_here
+pip install -r requirements.txt
+export AI_API_KEY=your_key_here
 python finance_analyst.py
 ```

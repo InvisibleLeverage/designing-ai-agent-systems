@@ -18,7 +18,7 @@ RAG pipelines and multi-document intelligence for grounded, traceable research.
 ## Quick start
 
 ```bash
-pip install anthropic numpy
+pip install -r requirements.txt
 python rag_research_system.py   # indexes sample docs and answers a question
 python document_intelligence.py # runs three-pass analysis on sample documents
 ```
@@ -26,7 +26,7 @@ python document_intelligence.py # runs three-pass analysis on sample documents
 Set your API key first:
 
 ```bash
-export ANTHROPIC_API_KEY=your_key_here
+export AI_API_KEY=your_key_here
 ```
 
 ## Architecture

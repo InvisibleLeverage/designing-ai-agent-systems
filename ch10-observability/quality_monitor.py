@@ -15,7 +15,7 @@ from typing import Literal, Optional
 
 import anthropic
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 
 
 # ── Data types ────────────────────────────────────────────────────────────────

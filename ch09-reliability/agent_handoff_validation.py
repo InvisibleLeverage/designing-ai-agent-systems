@@ -11,7 +11,7 @@ import os
 
 import anthropic
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 HAIKU = "claude-haiku-4-5-20251001"
 
 VALIDATION_SYSTEM = """You are a schema validator. Given an output and expected schema,

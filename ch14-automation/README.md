@@ -32,7 +32,7 @@ Score your workflow candidate on these five factors (1–5 each):
 ## Quick start
 
 ```bash
-pip install anthropic
+pip install -r requirements.txt
 python crm_intelligence.py    # analyses sample contacts and drafts follow-ups
 python proposal_generator.py  # generates a sample proposal from a brief
 ```
@@ -40,7 +40,7 @@ python proposal_generator.py  # generates a sample proposal from a brief
 Set your API key first:
 
 ```bash
-export ANTHROPIC_API_KEY=your_key_here
+export AI_API_KEY=your_key_here
 ```
 
 ## Important

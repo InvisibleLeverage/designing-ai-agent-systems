@@ -43,8 +43,8 @@ Store in memory → deliver report + checklist
 ## Quick start
 
 ```bash
-pip install anthropic
-export ANTHROPIC_API_KEY=your_key_here
+pip install -r requirements.txt
+export AI_API_KEY=your_key_here
 python production_research.py
 ```
 

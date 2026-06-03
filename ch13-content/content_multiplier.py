@@ -18,7 +18,7 @@ from dataclasses import dataclass
 
 import anthropic
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 REASONING_MODEL = "claude-sonnet-4-6"
 FAST_MODEL      = "claude-haiku-4-5-20251001"   # email subjects only
 

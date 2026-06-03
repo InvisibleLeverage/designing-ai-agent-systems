@@ -15,7 +15,7 @@ import anthropic
 
 from tool_library import TOOLS, dispatch_tool
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("AI_API_KEY"))
 MODEL = "claude-sonnet-4-6"
 
 DEFAULT_SYSTEM = """You are a helpful AI agent. You have access to tools to help complete tasks.

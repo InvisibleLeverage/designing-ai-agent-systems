@@ -46,8 +46,8 @@ After 8–12 weeks, content strategy is grounded in actual audience behaviour.
 ## Quick start
 
 ```bash
-pip install anthropic
-export ANTHROPIC_API_KEY=your_key_here
+pip install -r requirements.txt
+export AI_API_KEY=your_key_here
 python content_media_system.py
 ```
 
