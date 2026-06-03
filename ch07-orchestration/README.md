@@ -16,3 +16,6 @@ Before adding any agent, calculate its Coordination Tax:
 | `sequential_pipeline.py` | Sequential | Ordered stages, each depends on previous |
 | `parallel_orchestrator.py` | Parallel fan-out | Independent subtasks, need to synthesize |
 | `hierarchical_orchestrator.py` | Hierarchical | Complex goals needing decomposition |
+| `message_bus.py` | Message Bus | Typed inter-agent message passing; swap for Redis pub/sub in production |
+| `task_queue.py` | Task Queue | Priority queue with retry logic and async worker pool |
+| `call_timeout.py` | Call Timeout | Hard timeout per agent call with dead letter queue on expiry |

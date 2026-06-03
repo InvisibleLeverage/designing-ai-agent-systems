@@ -10,6 +10,7 @@ Implementation contracts for the four-layer agent architecture.
 | `agent_loop.py` | Agent Loop | Core perception-reasoning-action loop |
 | `tool_library.py` | Tool Library | Tool definition and dispatch layer |
 | `parallel_fanout.py` | Parallel Fan-out | Concurrent subtask execution |
+| `parallel_orchestrator.py` | Parallel Orchestrator | Fan-out with asyncio.gather + synthesis step |
 
 ## Key principle
 

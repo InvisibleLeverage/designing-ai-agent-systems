@@ -8,6 +8,7 @@ Tool design is the most underestimated control point in agent reliability.
 |---|---|---|
 | `tool_registry.py` | Tool Registry | Centralized tool definition and lookup |
 | `tool_dispatcher.py` | Tool Dispatcher | Safe dispatch with structured error returns |
+| `tool_library.py` | Tool Library | Two-layer architecture: definitions + dispatch; never raises |
 
 ## Key principle
 

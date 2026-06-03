@@ -10,6 +10,8 @@ Production infrastructure for AI agent systems: async task queues, cost controls
 | `cost_manager.py` | Cost Manager | Per-user and system-wide API cost tracking with daily budget enforcement |
 | `token_budget_manager.py` | Token Budget | Per-category context window allocation to prevent runaway token loops |
 | `model_router.py` | Model Router | Route tasks to Haiku / Sonnet / Opus by complexity to cut costs 60–80% |
+| `circuit_breaker.py` | Circuit Breaker | Per-tool registry; fail-fast when any dependency is degraded |
+| `tool_cache.py` | Tool Cache | TTL decorator for tool outputs; tracks hit rate as a production metric |
 
 ## Key principle
 
